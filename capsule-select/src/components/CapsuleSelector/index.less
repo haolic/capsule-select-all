@@ -1,0 +1,94 @@
+.selectorwrap {
+    position: relative;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.selectinput {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 24px;
+    width: 90px;
+}
+
+:global {
+    .list {
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        font-family: '黑体';
+        position: absolute;
+        left: 0;
+        border-radius: 4px;
+        color: #333;
+        transition: all .3s cubic-bezier(0.64, 0.11, 0.15, 0.98);
+        background: #fff;
+        li {
+            white-space: nowrap;
+            transition: all 0.3s cubic-bezier(0.64, 0.11, 0.15, 0.98);
+            height: 32px;
+            line-height: 32px;
+            padding: 0 8px;
+            cursor: pointer;
+            border-radius: 4px;
+            &:hover {
+                background: #c0e2ff;
+            }
+        }
+    }
+    .inputwrap {
+        position: relative;
+        display: inline-block;
+        margin-left: 5px;
+        line-height: 24px;
+        vertical-align: middle;
+    }
+    .capsuleWrap {
+        display: inline-block;
+        height: 27px;
+        line-height: 27px;
+        font-size: 14px;
+        padding: 0 20px 0 8px;
+        border-radius: 4px;
+        background: #c0e2ff;
+        font-family: '黑体';
+        position: relative;
+        .deleteicon {
+            position: absolute;
+            right: 5px;
+            top: 7px;
+            opacity: 0;
+        }
+        &:hover .deleteicon {
+            opacity: 1;
+        }
+        &+.capsuleWrap {
+            margin-left: 5px;
+        }
+    }
+    .capsuleDown {
+        position: absolute;
+        left: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .capsuletable {
+        .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td {
+            padding: 5px 0;
+            white-space: nowrap;
+        }
+    }
+    .ant-table-tbody > tr > td.ant-table-selection-column {
+        min-width: 30px;
+        width: 30px;
+    }
+    .ant-table-small {
+        min-width: 160px;
+        border: none;
+    }
+    .ant-table-small > .ant-table-content > .ant-table-body {
+        margin: 0;
+        background: #fff;
+    }
+}
