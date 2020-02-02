@@ -23,9 +23,9 @@ class NoCompactingLayout extends React.PureComponent {
     super(props);
     const layout = [
       {
-        x: 200,
-        y: 0,
-        w: 600,
+        x: 50,
+        y: 10,
+        w: 900,
         h: 500,
         i: 'i',
       },
