@@ -1,6 +1,5 @@
 import React from 'react';
 import RGL, { WidthProvider } from 'react-grid-layout';
-import { connect } from 'dva';
 import 'react-grid-layout/css/styles.css';
 import 'react-resizable/css/styles.css';
 import styles from './index.less';
@@ -26,7 +25,7 @@ class NoCompactingLayout extends React.PureComponent {
         x: 50,
         y: 10,
         w: 900,
-        h: 500,
+        h: 300,
         i: 'i',
       },
     ];

@@ -14,7 +14,7 @@ const Coronavirus = () => {
       forceFit: true,
       seriesField: 'type',
       xAxis: {
-        type: 'category',
+        type: 'timeCat',
         formatter: t => {
           return t.substr(5);
         },
