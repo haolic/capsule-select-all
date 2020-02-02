@@ -8,7 +8,7 @@ const btnList = [
   { name: '图片覆盖', key: '/Imgcover'},
   { name: 'useReducer', key: '/useReducer'},
   { name: '新冠状病毒肺炎疫情感染统计', key: '/Coronavirus'},
-  // { name: '疫情录入', key: '/CoronavirusAdd'}
+  { name: '疫情录入', key: '/CoronavirusAdd'}
 ];
 
 export default btnList;
