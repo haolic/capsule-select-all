@@ -48,7 +48,7 @@ const CoronavirusAdd = props => {
       <Form {...formItemLayout}>
         <Form.Item label="日期">
           {getFieldDecorator('date', {
-            initialValue: moment(),
+            initialValue: moment().subtract(1, 'day'),
           })(<DatePicker allowClear={false} />)}
         </Form.Item>
         <Form.Item label="截止当日值">

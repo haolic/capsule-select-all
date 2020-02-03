@@ -1,7 +1,7 @@
 import { extend } from 'umi-request';
 import { message } from 'antd';
 
-const baseUrl = 'http://69535ef8.cpolar.io';
+const baseUrl = 'http://localhost:7001';
 
 const request = extend({
   prefix: baseUrl,
