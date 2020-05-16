@@ -21,20 +21,20 @@ module.exports = appInfo => {
   config.view = {
     defaultViewEngine: 'nunjucks',
     mapping: {
-      '.tpl': 'nunjucks'
-    }
+      '.tpl': 'nunjucks',
+    },
   };
 
   config.security = {
     csrf: {
-      enable: false
+      enable: false,
     },
-    domainWhiteList: ['*']
+    domainWhiteList: ['*'],
   };
 
   config.cors = {
     origin: '*',
-    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS'
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
   };
 
   config.mysql = {
@@ -49,20 +49,26 @@ module.exports = appInfo => {
       // password
       password: 'root',
       // database
-      database: 'capsule_select'
+      database: 'capsule_select',
     },
     // load into app, default is open
     app: true,
     // load into agent, default is close
-    agent: false
+    agent: false,
   };
   // add your user config here
   const userConfig = {
-    // myAppName: 'egg',
+    // 配置需要的中间件，数组顺序即为中间件的加载顺序
+    middleware: ['gzip'],
+
+    // 配置 gzip 中间件的配置
+    gzip: {
+      threshold: 1024, // 小于 1k 的响应体不压缩
+    },
   };
 
   return {
     ...config,
-    ...userConfig
+    ...userConfig,
   };
 };
