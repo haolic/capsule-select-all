@@ -15,9 +15,10 @@ const Coronavirus = () => {
       seriesField: 'type',
       xAxis: {
         type: 'timeCat',
-        formatter: t => {
-          return t.substr(5);
-        },
+        // formatter: t => {
+        //   console.log(t)
+        //   return t.substr(5);
+        // },
       },
       label: {
         visible: true,
